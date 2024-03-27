@@ -1,0 +1,213 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "keys",
+						"type": "int256[]"
+					}
+				],
+				"name": "addArrays",
+				"outputs": [
+					{
+						"internalType": "int256[]",
+						"name": "resultGrad",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "int256[]",
+						"name": "resultBeta",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "int256[]",
+						"name": "resultSigma",
+						"type": "int256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "key",
+						"type": "int256"
+					}
+				],
+				"name": "calculateAndStoreSquareSum",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "startKey",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "endKey",
+						"type": "int256"
+					}
+				],
+				"name": "computeSumOfSquaresInRange",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "gradSum",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "betaSum",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "sigmaSum",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "key",
+						"type": "int256"
+					}
+				],
+				"name": "getBeta",
+				"outputs": [
+					{
+						"internalType": "int256[]",
+						"name": "",
+						"type": "int256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "key",
+						"type": "int256"
+					}
+				],
+				"name": "getGrad",
+				"outputs": [
+					{
+						"internalType": "int256[]",
+						"name": "",
+						"type": "int256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "key",
+						"type": "int256"
+					}
+				],
+				"name": "getSigma",
+				"outputs": [
+					{
+						"internalType": "int256[]",
+						"name": "",
+						"type": "int256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "key",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256[]",
+						"name": "grad",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "int256[]",
+						"name": "beta",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "int256[]",
+						"name": "sigma",
+						"type": "int256[]"
+					}
+				],
+				"name": "storeData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"10.sol": "DataStorage"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"10.sol": {
+			"keccak256": "0x4e1403c1464562792d08f72d0ab048b02c0def96b7b954ab4e2501b6ceb58af9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ae6bbbe13cd23591d20bc47347b3f6a779a4030723fd3feb2b1cb1508bb58962",
+				"dweb:/ipfs/QmTS54mNvDox6zbjZ8861zZGZJ2zLGrB1TnfNEYHMBFPkB"
+			]
+		}
+	},
+	"version": 1
+}

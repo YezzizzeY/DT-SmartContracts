@@ -1,0 +1,192 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "calculateFinalCommitment",
+				"outputs": [
+					{
+						"internalType": "uint256[4]",
+						"name": "",
+						"type": "uint256[4]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "merkleRoot",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "r",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256[4]",
+								"name": "numbers",
+								"type": "uint256[4]"
+							}
+						],
+						"internalType": "struct OmPlus3.Commitment[]",
+						"name": "_commitments",
+						"type": "tuple[]"
+					}
+				],
+				"name": "storeCommitments",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_merkleRoot",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "storeMerkleRootAndNumbers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256[5]",
+								"name": "outputWires",
+								"type": "uint256[5]"
+							},
+							{
+								"internalType": "uint256[5]",
+								"name": "sigmas",
+								"type": "uint256[5]"
+							}
+						],
+						"internalType": "struct OmPlus3.VerifyInfo[]",
+						"name": "_verifyInfos",
+						"type": "tuple[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_r",
+						"type": "uint256"
+					}
+				],
+				"name": "storeVerifyInfosAndR",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Om+.sol": "OmPlus3"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lagrange.sol": {
+			"keccak256": "0x19dfc76dd3aff00365e983ca2f0ddff25bf765cb7dc5a056fb7202da02e61e53",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f94d8b3e290a1bac4c8b8d71b47dd5d05976200d56e46471a6cd25430ca07aa4",
+				"dweb:/ipfs/QmUe4D2LRRTsrjsQmcNeiojgbqZCXmTu6XZKYx5tWCD4jD"
+			]
+		},
+		"Om+.sol": {
+			"keccak256": "0x9435a9c94fd48b9d46f29caa86a936afe58f488e2b8ce52e873aa5d71a453b40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://800670b26cc0145f3d2227f397feb277f483e21d622a0acc70456d668ac1746b",
+				"dweb:/ipfs/QmXRW7MHVE99Md8veMNm91qEfnKqSc9ghF9rhzSewLXxXH"
+			]
+		}
+	},
+	"version": 1
+}

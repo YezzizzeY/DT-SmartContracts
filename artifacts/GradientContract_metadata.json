@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "calculateFinalGradients",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "alpha",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "beta",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gama",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GradientContract.Gradient[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "alpha",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "beta",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gama",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GradientContract.Gradient[]",
+						"name": "gradients",
+						"type": "tuple[]"
+					}
+				],
+				"name": "uploadGradients",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userGradients",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "alpha",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "beta",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gama",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"totalOnchain.sol": "GradientContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"totalOnchain.sol": {
+			"keccak256": "0xd88338f2a3b79a73a83cb33373b9ce0653ce9f4eaba2ec2848a72e0689a9b442",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://360bb21819f12b0757cd2d315efbd9949c29cb41cac7245b2f8d883b409b3b18",
+				"dweb:/ipfs/QmVZDJGyMFFwpze7jY1ToMmfH3VBXxeKweRFroRtKHKoCs"
+			]
+		}
+	},
+	"version": 1
+}
